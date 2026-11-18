@@ -1,0 +1,62 @@
+name: Extrair pacote do site
+
+on:
+  push:
+    paths:
+      - '*.zip'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  extract-site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Localizar e extrair pacote ZIP
+        id: extract
+        shell: bash
+        run: |
+          shopt -s nullglob
+          archives=( *.zip )
+          if [ "${#archives[@]}" -eq 0 ]; then
+            echo "found=false" >> "$GITHUB_OUTPUT"
+            echo "Nenhum ZIP na raiz."
+            exit 0
+          fi
+          if [ "${#archives[@]}" -ne 1 ]; then
+            echo "Envie apenas um ZIP por vez para a raiz do repositório."
+            exit 1
+          fi
+          archive="${archives[0]}"
+          mkdir -p /tmp/charllottone-site
+          python3 - "$archive" <<'PY'
+          import sys, zipfile
+          from pathlib import PurePosixPath
+          archive = sys.argv[1]
+          with zipfile.ZipFile(archive) as z:
+              for item in z.infolist():
+                  p = PurePosixPath(item.filename)
+                  if p.is_absolute() or '..' in p.parts:
+                      raise SystemExit(f"Caminho inseguro no ZIP: {item.filename}")
+              z.extractall('/tmp/charllottone-site')
+          PY
+          cp -a /tmp/charllottone-site/. .
+          rm "$archive"
+          echo "found=true" >> "$GITHUB_OUTPUT"
+
+      - name: Salvar arquivos extraídos no GitHub
+        if: steps.extract.outputs.found == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nenhuma alteração para salvar."
+          else
+            git commit -m "Adicionar site Charllottone e todas as fotos"
+            git push
+          fi
