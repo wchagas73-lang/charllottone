@@ -103,3 +103,13 @@ body{overflow-x:hidden}
   .hero h1{font-size:65px}
   .brand{font-size:16px}
 }
+
+
+/* Faixa de identidade com movimento horizontal contínuo */
+.ticker{display:block;overflow:hidden;white-space:nowrap}
+.ticker-track{display:flex;width:max-content;animation:charllottone-marquee 28s linear infinite}
+.ticker-group{display:flex;align-items:center;flex:0 0 auto;white-space:nowrap;padding-right:24px}
+.ticker-group span{padding:0 18px}
+@keyframes charllottone-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.ticker:hover .ticker-track{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.ticker-track{animation:none;transform:none}}
