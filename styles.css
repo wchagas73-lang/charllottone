@@ -770,3 +770,149 @@ body:before{
     height:54px!important;
   }
 }
+
+
+/* PALETA STREETWEAR: PRETO, BRANCO, CINZA, BEGE, VERMELHO E ROXO */
+:root{
+  --wall-black:#111111;
+  --wall-charcoal:#242424;
+  --spray-purple:#7041a6;
+  --spray-red:#b82025;
+  --spray-gray:#777777;
+  --spray-cream:#c9bba6;
+  --spray-white:#f5f3ef;
+}
+html,body{background:#111111;color:#f5f3ef}
+body{
+  background-color:#111111;
+  background-image:
+    radial-gradient(ellipse at 16% 15%,rgba(112,65,166,.10),transparent 34%),
+    radial-gradient(ellipse at 88% 70%,rgba(184,32,37,.08),transparent 32%),
+    repeating-linear-gradient(117deg,rgba(255,255,255,.009) 0 1px,transparent 1px 8px);
+}
+body:before{opacity:.045}
+.topline{
+  background:#242424!important;
+  color:#f5f3ef!important;
+  border-bottom:1px solid #777;
+  text-shadow:none!important;
+}
+.header{background:rgba(17,17,17,.98)!important;border-bottom:1px solid #777;box-shadow:none}
+.nav a:not(.nav-cta){color:#d5d5d5}
+.nav a:hover,.text-link:hover{color:#c9bba6!important}
+.nav-cta{
+  background:#c9bba6!important;color:#111!important;
+  border:1px solid #c9bba6!important;box-shadow:none!important;transform:none!important;
+}
+.hero{
+  background:
+    radial-gradient(ellipse at 8% 18%,rgba(112,65,166,.12),transparent 31%),
+    radial-gradient(ellipse at 91% 76%,rgba(184,32,37,.09),transparent 29%),
+    linear-gradient(135deg,#111 0%,#1c1c1c 58%,#111 100%)!important;
+}
+.hero:before{opacity:.12!important}
+.hero:after{color:rgba(245,243,239,.34)!important;text-shadow:none!important}
+.hero h1,.section h2,.manifesto h2,.visit h2{text-shadow:none!important}
+.hero h1 span,.section h2 span,.manifesto h2 span,.visit h2 span{
+  color:#c9bba6!important;text-shadow:1px 1px 0 #7041a6!important;
+}
+.eyebrow{color:#c9bba6!important;text-shadow:none!important}
+.hero-image:after{
+  border:1px solid rgba(201,187,166,.65)!important;
+  box-shadow:5px 5px 0 rgba(112,65,166,.32)!important;
+}
+.hero-image img,.gallery figure img{
+  filter:none!important;
+  transition:transform .45s ease!important;
+}
+.hero-image img{object-fit:cover}
+.image-tag{display:none!important}
+.hero-image-caption{
+  left:10px!important;right:10px!important;bottom:10px!important;
+  width:auto!important;max-width:calc(100% - 20px)!important;
+  padding:5px 7px!important;margin:0!important;
+  background:rgba(0,0,0,.12)!important;border:0!important;
+  box-shadow:none!important;backdrop-filter:none!important;
+  transform:none!important;
+  display:flex!important;flex-direction:column!important;gap:2px!important;
+}
+.hero-image-caption span{
+  color:#f5f3ef!important;font:500 8px/1.2 Inter,Arial,sans-serif!important;
+  letter-spacing:1px!important;opacity:.9;
+}
+.hero-image-caption strong{
+  color:#fff!important;font:700 12px/1.15 Inter,Arial,sans-serif!important;
+  letter-spacing:.4px!important;text-shadow:0 1px 4px #000!important;
+}
+.ticker{
+  background:#242424!important;color:#f5f3ef!important;border:0!important;
+  box-shadow:none!important;transform:none!important;
+  font-family:'Barlow Condensed',Impact,sans-serif!important;
+}
+.ticker-group span{color:#c9bba6!important;text-shadow:none!important}
+.collection{
+  background:
+    radial-gradient(ellipse at 95% 5%,rgba(112,65,166,.08),transparent 28%),
+    #151515!important;
+}
+.collection:before{color:rgba(201,187,166,.055)!important}
+.section h2 span{color:#c9bba6!important}
+.gallery figure,.gallery figure:nth-child(n){
+  border:1px solid rgba(201,187,166,.18)!important;
+  box-shadow:none!important;transform:none;
+  background:#242424;
+}
+.gallery figure:hover{transform:translateY(-3px)!important}
+.gallery figcaption{
+  left:0!important;right:0!important;bottom:0!important;
+  padding:19px 10px 8px!important;gap:2px!important;
+  background:linear-gradient(0deg,rgba(0,0,0,.34),rgba(0,0,0,0))!important;
+  border:0!important;text-shadow:none!important;
+}
+.gallery figcaption span{
+  color:rgba(255,255,255,.82)!important;
+  font:500 7px/1.2 Inter,Arial,sans-serif!important;
+  letter-spacing:.8px!important;text-shadow:0 1px 3px #000!important;
+}
+.gallery figcaption b{
+  color:#fff!important;font:600 11px/1.15 Inter,Arial,sans-serif!important;
+  letter-spacing:.25px!important;text-shadow:0 1px 3px #000!important;
+}
+.button-light{background:#c9bba6!important;color:#111!important;box-shadow:none!important}
+.button-light:hover{background:#f5f3ef!important}
+.button-outline,.center-action .button{
+  border:1px solid #c9bba6!important;box-shadow:none!important;
+}
+.button-outline:hover{background:#c9bba6!important;color:#111!important;border-color:#c9bba6!important}
+.manifesto{
+  background:
+    radial-gradient(ellipse at 12% 22%,rgba(112,65,166,.18),transparent 30%),
+    radial-gradient(ellipse at 88% 76%,rgba(184,32,37,.10),transparent 28%),
+    #202020!important;
+  border-top:1px solid #7041a6!important;border-bottom:1px solid #b82025!important;
+}
+.manifesto:after{border-color:rgba(201,187,166,.12)!important}
+.manifesto h2 span{color:#c9bba6!important;text-shadow:none!important}
+.manifesto-mark{color:#c9bba6!important;text-shadow:2px 2px 0 rgba(112,65,166,.45)!important}
+.reviews{background:#f5f3ef!important;color:#111!important}
+.review-card{border:1px solid #ddd!important;box-shadow:none!important}
+.stars{color:#b82025!important}
+.visit{background:#111!important}
+.visit-copy .eyebrow{color:#c9bba6!important}
+.visit-map{border:1px solid #777!important;box-shadow:none!important}
+.visit-map>a,.maps-link{color:#c9bba6!important}
+.footer{border-top:1px solid #777!important}
+.visit-art{background:radial-gradient(circle,#292929,#111 70%)!important;border-color:#777!important}
+.visit-art span{color:#c9bba6!important;text-shadow:none!important}
+.floating-whatsapp{box-shadow:0 4px 16px #0007}
+@media(max-width:680px){
+  .hero-image-caption{left:8px!important;right:8px!important;bottom:8px!important}
+  .hero-image-caption span{font-size:7px!important}
+  .hero-image-caption strong{font-size:10px!important}
+  .gallery figcaption{padding:16px 8px 7px!important}
+  .gallery figcaption span{font-size:6px!important}
+  .gallery figcaption b{font-size:10px!important}
+}
+@media(prefers-reduced-motion:reduce){
+  .hero-image img,.gallery figure img{transition:none!important}
+}
