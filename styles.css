@@ -1235,3 +1235,126 @@ body{
   .topline{font-size:8px!important;letter-spacing:1px!important}
   .manifesto:after{opacity:.5!important}
 }
+
+
+/* DIRECAO CORRETA: GRAFFITI COLORIDO, COMO ARTE DE MURO */
+:root{
+  --graffiti-black:#0b0b0e;
+  --graffiti-white:#f5f2ed;
+  --graffiti-purple:#8b35e8;
+  --graffiti-blue:#176bff;
+  --graffiti-cyan:#19d5e8;
+  --graffiti-red:#f02d3a;
+  --graffiti-orange:#ff6a24;
+  --graffiti-yellow:#ffd52e;
+  --graffiti-pink:#ff3e9d;
+  --graffiti-green:#b5e323;
+}
+html,body{background:var(--graffiti-black)!important;color:var(--graffiti-white)!important}
+body{
+ background-color:var(--graffiti-black)!important;
+ background-image:
+  radial-gradient(ellipse at 7% 18%,rgba(139,53,232,.16),transparent 23%),
+  radial-gradient(ellipse at 92% 38%,rgba(23,107,255,.12),transparent 22%),
+  radial-gradient(ellipse at 78% 90%,rgba(240,45,58,.10),transparent 23%),
+  repeating-linear-gradient(118deg,rgba(255,255,255,.012) 0 1px,transparent 1px 9px)!important;
+}
+.topline{
+ background:#111116!important;color:#f5f2ed!important;
+ border-bottom:1px solid #33313a!important;
+ animation:none!important;text-shadow:none!important;
+ position:relative;isolation:isolate;
+}
+.topline:after{
+ content:"";position:absolute;left:0;bottom:-2px;width:100%;height:3px;
+ background:linear-gradient(90deg,var(--graffiti-purple) 0 18%,var(--graffiti-blue) 18% 36%,var(--graffiti-cyan) 36% 52%,var(--graffiti-red) 52% 70%,var(--graffiti-orange) 70% 84%,var(--graffiti-pink) 84%);
+}
+.header{background:rgba(11,11,14,.97)!important;border-bottom:1px solid #302d36!important;box-shadow:none!important}
+.nav-cta{background:var(--graffiti-purple)!important;color:#fff!important;box-shadow:3px 3px 0 var(--graffiti-cyan)!important;border:0!important}
+.nav a:hover,.text-link:hover{color:var(--graffiti-cyan)!important}
+.eyebrow{color:var(--graffiti-yellow)!important;text-shadow:1px 1px 0 #000!important}
+.hero{
+ background:
+  radial-gradient(ellipse at 7% 14%,rgba(139,53,232,.22),transparent 27%),
+  radial-gradient(ellipse at 92% 78%,rgba(23,107,255,.18),transparent 27%),
+  linear-gradient(135deg,#0b0b0e 0%,#17131d 52%,#0b0b0e 100%)!important;
+}
+.hero:before{
+ content:"";position:absolute;width:300px;height:240px;left:-115px;top:48%;
+ opacity:.5;pointer-events:none;
+ background:
+  radial-gradient(circle at 35% 40%,var(--graffiti-pink) 0 2px,transparent 3px),
+  radial-gradient(circle at 65% 65%,var(--graffiti-cyan) 0 2px,transparent 3px),
+  radial-gradient(circle at 80% 20%,var(--graffiti-yellow) 0 1.5px,transparent 2.5px);
+ background-size:17px 19px,23px 21px,13px 16px;
+}
+.hero h1 span,.section h2 span,.manifesto h2 span,.visit h2 span{
+ color:var(--graffiti-pink)!important;
+ text-shadow:3px 3px 0 var(--graffiti-purple),6px 6px 0 rgba(23,107,255,.65)!important;
+}
+.hero-image:after{
+ border:3px solid var(--graffiti-cyan)!important;
+ box-shadow:8px 8px 0 var(--graffiti-purple),-4px -4px 0 var(--graffiti-red)!important;
+}
+.hero-image img,.gallery figure img{filter:none!important}
+.button-light{background:var(--graffiti-yellow)!important;color:#101014!important;box-shadow:4px 4px 0 var(--graffiti-red)!important}
+.button-light:hover{background:var(--graffiti-cyan)!important}
+.text-link{border-color:var(--graffiti-pink)!important}
+.ticker{
+ background:#111116!important;color:#f5f2ed!important;
+ border-top:1px solid #38313f!important;border-bottom:1px solid #38313f!important;
+ box-shadow:none!important;transform:none!important;
+ font-family:'Permanent Marker',cursive!important;
+}
+.ticker-group span{color:var(--graffiti-cyan)!important;text-shadow:2px 2px 0 var(--graffiti-purple)!important}
+.collection{background:#111116!important}
+.collection:before{opacity:.12!important}
+.section h2 span{color:var(--graffiti-yellow)!important;text-shadow:3px 3px 0 var(--graffiti-red)!important}
+.gallery figure,.gallery figure:nth-child(n){
+ background:#19171f!important;border:1px solid #46404d!important;box-shadow:none!important;
+}
+.gallery figure:nth-child(3n+1){border-top:3px solid var(--graffiti-purple)!important}
+.gallery figure:nth-child(3n+2){border-top:3px solid var(--graffiti-cyan)!important}
+.gallery figure:nth-child(3n){border-top:3px solid var(--graffiti-red)!important}
+.gallery figure:hover{border-color:var(--graffiti-yellow)!important}
+.gallery figcaption span{color:var(--graffiti-yellow)!important}
+.gallery figcaption b{color:#fff!important}
+.button-outline,.center-action .button{
+ border:2px solid var(--graffiti-cyan)!important;
+ box-shadow:4px 4px 0 var(--graffiti-purple)!important;
+}
+.button-outline:hover{background:var(--graffiti-cyan)!important;color:#0b0b0e!important;border-color:var(--graffiti-cyan)!important}
+.manifesto{
+ position:relative;overflow:hidden;
+ background:
+  radial-gradient(ellipse at 8% 20%,rgba(139,53,232,.25),transparent 28%),
+  radial-gradient(ellipse at 92% 82%,rgba(240,45,58,.17),transparent 25%),
+  repeating-linear-gradient(165deg,rgba(255,255,255,.018) 0 1px,transparent 1px 12px),
+  #17131d!important;
+ border-top:2px solid var(--graffiti-purple)!important;
+ border-bottom:2px solid var(--graffiti-cyan)!important;
+}
+.manifesto:after{
+ content:"";position:absolute;right:-48px;top:-75px;width:230px;height:230px;
+ border:20px dotted rgba(255,62,157,.28);border-radius:50%;pointer-events:none;
+}
+.manifesto .eyebrow{color:var(--graffiti-cyan)!important}
+.manifesto h2 span{color:var(--graffiti-yellow)!important;text-shadow:3px 3px 0 var(--graffiti-red)!important}
+.manifesto-mark{color:var(--graffiti-pink)!important;text-shadow:5px 5px 0 var(--graffiti-purple),-2px -2px 0 var(--graffiti-cyan)!important}
+.reviews{background:#15141a!important;color:#f5f2ed!important}
+.reviews .eyebrow{color:var(--graffiti-cyan)!important}
+.reviews h2 span{color:var(--graffiti-yellow)!important;text-shadow:2px 2px 0 var(--graffiti-purple)!important}
+.review-card{background:#211e27!important;color:#f5f2ed!important;border:1px solid #49404f!important;box-shadow:3px 3px 0 rgba(139,53,232,.25)!important}
+.review-card p{color:#f5f2ed!important}
+.review-card small,.rating-summary small{color:#aaa!important}
+.stars{color:var(--graffiti-yellow)!important}
+.reviews>.text-link{color:#f5f2ed!important}
+.visit{background:#0d0d12!important}
+.visit-copy .eyebrow{color:var(--graffiti-orange)!important}
+.visit-map{border:2px solid var(--graffiti-cyan)!important;box-shadow:6px 6px 0 var(--graffiti-purple)!important}
+.visit-map>a,.maps-link{color:var(--graffiti-cyan)!important}
+.visit-art{border:1px solid #49404f!important;background:#1c1922!important}
+.visit-art span{color:var(--graffiti-yellow)!important;text-shadow:3px 3px 0 var(--graffiti-purple)!important}
+.footer{border-top:2px solid var(--graffiti-pink)!important}
+.floating-whatsapp{background:#17131d!important;color:#25d366!important;border:1px solid #51415e!important}
+@media(prefers-reduced-motion:reduce){.ticker-track{animation:none!important}}
