@@ -1358,3 +1358,15 @@ body{
 .footer{border-top:2px solid var(--graffiti-pink)!important}
 .floating-whatsapp{background:#17131d!important;color:#25d366!important;border:1px solid #51415e!important}
 @media(prefers-reduced-motion:reduce){.ticker-track{animation:none!important}}
+
+
+/* Rodapé: pagamento, entrega nacional e Instagram */
+.footer-commerce{display:grid;gap:7px;margin:22px auto 18px;text-align:center;color:#f5f3ef;font-size:12px;line-height:1.6;letter-spacing:.04em}
+.footer-commerce p{margin:0}
+.footer-commerce .footer-commerce-title{font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:800;letter-spacing:.14em;color:#19d5e8}
+.footer-commerce p:last-child{font-weight:800;letter-spacing:.12em;color:#ff3e9d}
+.footer-instagram{display:inline-flex;align-items:center;justify-content:center;gap:9px}
+.footer-instagram svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.footer-instagram svg .instagram-dot{fill:currentColor;stroke:none}
+.footer-instagram span{font-weight:800;letter-spacing:.12em}
+@media(max-width:680px){.footer-commerce{font-size:11px;margin:18px auto 15px}.footer-commerce .footer-commerce-title{font-size:14px}}
