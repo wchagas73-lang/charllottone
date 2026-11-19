@@ -420,3 +420,41 @@ body{background:var(--ink);color:var(--paper)}
   .brand-name{clip-path:none;animation:none}
   .brand-name:after{transform:scaleX(1);animation:none}
 }
+
+
+/* MARCA: somente o nome, preservando a tipografia condensada original do layout */
+.brand img{display:none!important}
+.brand{gap:0}
+.brand-name{
+  font-family:'Barlow Condensed',Impact,sans-serif!important;
+  font-size:clamp(29px,3vw,39px);
+  font-weight:900;
+  font-style:italic;
+  letter-spacing:1.2px!important;
+  color:#f4f1e9;
+  text-shadow:2px 2px 0 var(--purple),-1px -1px 0 var(--cyan),0 0 10px rgba(242,138,61,.22);
+  clip-path:inset(0 100% 0 0);
+  animation:brand-original-spray 1.35s cubic-bezier(.2,.7,.2,1) .2s forwards;
+}
+.brand-name:after{
+  height:5px;
+  bottom:-8px;
+  background:linear-gradient(90deg,var(--purple),var(--orange),var(--cyan),transparent);
+  filter:blur(1.2px);
+  transform:scaleX(0) rotate(-1deg);
+  transform-origin:left center;
+  animation:brand-original-spray-line .75s ease 1s forwards;
+}
+@keyframes brand-original-spray{
+  0%{clip-path:inset(0 100% 0 0);filter:blur(2px);transform:skewX(-9deg) translateX(-5px)}
+  70%{filter:blur(.25px);transform:skewX(2deg)}
+  100%{clip-path:inset(0 0 0 0);filter:none;transform:skewX(0)}
+}
+@keyframes brand-original-spray-line{to{transform:scaleX(1) rotate(-1deg)}}
+@media(max-width:680px){
+  .brand-name{font-size:clamp(27px,7vw,34px)}
+}
+@media(prefers-reduced-motion:reduce){
+  .brand-name{clip-path:none;animation:none}
+  .brand-name:after{transform:scaleX(1);animation:none}
+}
