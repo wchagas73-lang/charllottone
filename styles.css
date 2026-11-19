@@ -353,3 +353,70 @@ body{background:var(--ink);color:var(--paper)}
 /* Mantem as animacoes de entrada sem bloquear os efeitos de hover */
 @keyframes street-photo-in{from{opacity:0}to{opacity:1}}
 @keyframes street-review-in{from{opacity:0}to{opacity:1}}
+
+
+/* CABECALHO: lettering grafitado ao lado da logo, sem arte duplicada no hero */
+.brand{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  min-width:0;
+}
+.brand img{
+  width:72px;
+  height:72px;
+  flex:0 0 72px;
+  padding:0;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  object-fit:contain;
+  clip-path:none;
+  transform:none;
+  mix-blend-mode:multiply;
+  filter:drop-shadow(0 2px 3px rgba(0,0,0,.35));
+}
+.brand-name{
+  position:relative;
+  display:inline-block;
+  overflow:visible;
+  white-space:nowrap;
+  font-family:'Rubik Wet Paint','Permanent Marker',cursive!important;
+  font-size:clamp(21px,2.2vw,29px);
+  line-height:1;
+  letter-spacing:.5px!important;
+  color:var(--paper);
+  text-shadow:2px 2px 0 var(--purple),-1px -1px 0 var(--cyan);
+  clip-path:inset(0 100% 0 0);
+  animation:brand-spray-reveal 1.45s cubic-bezier(.2,.7,.2,1) .25s forwards;
+}
+.brand-name:after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:-7px;
+  height:4px;
+  border-radius:50%;
+  background:linear-gradient(90deg,var(--purple),var(--orange),var(--cyan));
+  filter:blur(1.5px);
+  transform:scaleX(0);
+  transform-origin:left center;
+  animation:brand-spray-line .7s ease 1.15s forwards;
+}
+@keyframes brand-spray-reveal{
+  0%{clip-path:inset(0 100% 0 0);filter:blur(3px);transform:skewX(-8deg)}
+  65%{filter:blur(.3px);transform:skewX(2deg)}
+  100%{clip-path:inset(0 0 0 0);filter:blur(0);transform:skewX(0)}
+}
+@keyframes brand-spray-line{to{transform:scaleX(1)}}
+.brand:hover .brand-name{text-shadow:2px 2px 0 var(--orange),-2px -1px 0 var(--cyan)}
+@media(max-width:680px){
+  .brand{gap:9px}
+  .brand img{width:58px;height:58px;flex-basis:58px}
+  .brand-name{font-size:clamp(17px,5vw,23px)}
+}
+@media(prefers-reduced-motion:reduce){
+  .brand-name{clip-path:none;animation:none}
+  .brand-name:after{transform:scaleX(1);animation:none}
+}
