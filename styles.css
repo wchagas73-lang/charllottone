@@ -1370,3 +1370,11 @@ body{
 .footer-instagram svg .instagram-dot{fill:currentColor;stroke:none}
 .footer-instagram span{font-weight:800;letter-spacing:.12em}
 @media(max-width:680px){.footer-commerce{font-size:11px;margin:18px auto 15px}.footer-commerce .footer-commerce-title{font-size:14px}}
+
+
+/* Logo: fundo branco externo removido, círculo preto integrado ao cabeçalho */
+.brand img{
+  mix-blend-mode:normal!important;
+  background:transparent!important;
+  object-fit:contain!important;
+}
