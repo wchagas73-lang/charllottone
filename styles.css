@@ -1067,3 +1067,51 @@ body:before{opacity:.10}
 @media(prefers-reduced-motion:reduce){
   .gallery figure{animation:none!important}
 }
+
+
+/* LOGO CHARLLOTTONE: destacar somente o lettering branco sobre o fundo escuro */
+.brand{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-start!important;
+  width:auto!important;
+  min-width:0!important;
+  min-height:82px!important;
+  overflow:visible!important;
+}
+.brand img{
+  display:block!important;
+  width:clamp(220px,25vw,285px)!important;
+  height:82px!important;
+  max-width:none!important;
+  flex:0 0 auto!important;
+  object-fit:contain!important;
+  object-position:left center!important;
+  border:0!important;
+  border-radius:0!important;
+  padding:0!important;
+  background:transparent!important;
+  mix-blend-mode:screen!important;
+  filter:none!important;
+  clip-path:none!important;
+  transform:scale(1.12)!important;
+  transform-origin:left center!important;
+}
+.brand-name{display:none!important}
+.header{overflow:visible!important}
+@media(max-width:900px){
+  .brand{min-height:72px!important}
+  .brand img{
+    width:clamp(190px,34vw,235px)!important;
+    height:72px!important;
+    transform:scale(1.10)!important;
+  }
+}
+@media(max-width:680px){
+  .brand{min-height:62px!important}
+  .brand img{
+    width:clamp(180px,52vw,220px)!important;
+    height:62px!important;
+    transform:scale(1.08)!important;
+  }
+}
