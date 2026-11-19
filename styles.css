@@ -279,3 +279,72 @@ body{background:var(--ink);color:var(--paper)}
 .visit-map{border-color:var(--orange);box-shadow:7px 7px 0 var(--purple)}
 .floating-whatsapp{box-shadow:0 0 0 4px rgba(215,198,165,.2),0 5px 25px #0009}
 @media(max-width:680px){.brand img{width:44px;height:44px;transform:none}}
+
+
+/* ANIMACOES FINAIS: grafite, entrada de conteudo e microinteracoes leves */
+.graffiti-reveal{
+  width:min(100%,620px);
+  margin:0 0 18px;
+  overflow:visible;
+  isolation:isolate;
+}
+.graffiti-reveal svg{display:block;width:100%;height:auto;overflow:visible}
+.graffiti-word{
+  font-family:'Rubik Wet Paint','Permanent Marker',cursive;
+  font-size:68px;
+  letter-spacing:1px;
+  fill:transparent;
+  stroke:var(--orange);
+  stroke-width:1.8px;
+  paint-order:stroke fill;
+  stroke-linejoin:round;
+  stroke-dasharray:1600;
+  stroke-dashoffset:1600;
+  filter:drop-shadow(3px 4px 0 rgba(129,87,200,.85));
+  animation:graffiti-draw 2.1s cubic-bezier(.55,.05,.3,1) .2s forwards,graffiti-fill .65s ease 1.35s forwards;
+}
+.graffiti-splatter{
+  fill:var(--cyan);
+  stroke:var(--orange);
+  stroke-width:2;
+  opacity:0;
+  transform-box:fill-box;
+  transform-origin:center;
+  animation:graffiti-splatter-pop .55s ease 1.35s forwards;
+}
+.graffiti-splatter path{fill:none;stroke-width:4;stroke-linecap:round}
+@keyframes graffiti-draw{0%{stroke-dashoffset:1600;opacity:.2}12%{opacity:1}100%{stroke-dashoffset:0;opacity:1}}
+@keyframes graffiti-fill{0%,35%{fill:transparent}100%{fill:var(--paper)}}
+@keyframes graffiti-splatter-pop{0%{opacity:0;transform:scale(.25) rotate(-18deg)}70%{opacity:1;transform:scale(1.12) rotate(5deg)}100%{opacity:.9;transform:scale(1) rotate(0)}}
+@keyframes street-photo-in{from{opacity:0;transform:translateY(13px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes street-review-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes whatsapp-soft-pulse{0%,100%{box-shadow:0 0 0 4px rgba(215,198,165,.2),0 5px 25px #0009}50%{box-shadow:0 0 0 8px rgba(215,198,165,.08),0 5px 28px #0009}}
+.gallery figure{animation:street-photo-in .55s ease both}
+.gallery figure:nth-child(2){animation-delay:.06s}
+.gallery figure:nth-child(3){animation-delay:.12s}
+.gallery figure:nth-child(4){animation-delay:.18s}
+.gallery figure:nth-child(5){animation-delay:.24s}
+.gallery figure:nth-child(6){animation-delay:.30s}
+.gallery figure:nth-child(7){animation-delay:.36s}
+.gallery figure:nth-child(8){animation-delay:.42s}
+.gallery figure:nth-child(9){animation-delay:.48s}
+.gallery figure:nth-child(10){animation-delay:.54s}
+.gallery figure:nth-child(11){animation-delay:.60s}
+.gallery figure:nth-child(12){animation-delay:.66s}
+.review-card{animation:street-review-in .55s ease both}
+.review-card:nth-child(2){animation-delay:.12s}
+.review-card:nth-child(3){animation-delay:.24s}
+.brand img{transition:transform .25s ease,filter .25s ease}
+.brand:hover img{transform:rotate(-5deg) scale(1.06);filter:drop-shadow(0 0 8px rgba(39,185,210,.45)) drop-shadow(2px 2px 0 rgba(129,87,200,.6))}
+.floating-whatsapp{animation:whatsapp-soft-pulse 3.2s ease-in-out infinite}
+.floating-whatsapp:hover{animation-play-state:paused}
+@media(max-width:680px){
+  .graffiti-reveal{width:100%;margin-bottom:12px}
+  .graffiti-word{font-size:68px;stroke-width:2.2px}
+}
+@media(prefers-reduced-motion:reduce){
+  .graffiti-word,.graffiti-splatter,.gallery figure,.review-card,.floating-whatsapp{animation:none!important}
+  .graffiti-word{stroke-dasharray:none;stroke-dashoffset:0;fill:var(--paper);stroke:var(--orange)}
+  .graffiti-splatter{opacity:.9}
+  .brand img{transition:none}
+}
