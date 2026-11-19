@@ -238,3 +238,44 @@ body{background:var(--ink);color:var(--paper)}
  .hero-image img,.gallery figure,.gallery figure img,.review-card,.button,.nav-cta,.maps-link,.light-link,.footer-links a,.floating-whatsapp{transition:none}
  .gallery figure:hover,.gallery figure:hover img,.review-card:hover,.button:hover,.floating-whatsapp:hover{transform:none}
 }
+
+
+/* REEQUILÍBRIO STREET GRAFFITI: roxo, laranja, azul e tons neutros */
+:root{
+  --pink:#8157c8;
+  --purple:#8157c8;
+  --cyan:#27b9d2;
+  --orange:#f28a3d;
+  --lime:#d7c6a5;
+}
+.topline{
+  background-image:linear-gradient(105deg,#25212d 0%,var(--purple) 24%,var(--orange) 52%,var(--cyan) 78%,#25212d 100%);
+  color:#fff;
+}
+.brand img{
+  width:52px;height:52px;object-fit:contain;clip-path:none;transform:none;
+  border-radius:50%;padding:2px;background:radial-gradient(circle,#25212d 55%,#111 72%);
+  filter:drop-shadow(0 0 5px rgba(215,198,165,.38)) drop-shadow(2px 2px 0 rgba(129,87,200,.5));
+  mix-blend-mode:normal;
+}
+.brand{gap:12px}
+.brand span{text-shadow:2px 2px 0 rgba(129,87,200,.8),-1px -1px 0 rgba(39,185,210,.55)}
+.hero h1 span{color:var(--orange);text-shadow:3px 3px 0 var(--purple)}
+.hero-image:after{border-color:var(--orange);box-shadow:8px 8px 0 var(--purple),-4px -4px 0 var(--cyan)}
+.button-light,.nav-cta{background:var(--paper);box-shadow:3px 3px 0 var(--purple)}
+.ticker{border-top-color:var(--orange);border-bottom-color:var(--purple)}
+.ticker-group span:nth-of-type(1){color:var(--orange)}
+.ticker-group span:nth-of-type(2){color:var(--cyan)}
+.ticker-group span:nth-of-type(3){color:var(--purple)}
+.gallery figure:nth-child(4n+1){box-shadow:inset 0 0 0 2px var(--purple)}
+.gallery figure:nth-child(4n+2){box-shadow:inset 0 0 0 2px var(--cyan)}
+.gallery figure:nth-child(4n+3){box-shadow:inset 0 0 0 2px var(--orange)}
+.gallery figure:nth-child(4n){box-shadow:inset 0 0 0 2px #d7c6a5}
+.manifesto h2 span{color:var(--orange);text-shadow:3px 3px 0 var(--purple)}
+.manifesto-mark{display:none}
+.review-card:nth-child(2){box-shadow:4px 4px 0 rgba(129,87,200,.25)}
+.review-card:nth-child(3){box-shadow:4px 4px 0 rgba(242,138,61,.22)}
+.visit h2 span{color:var(--cyan);text-shadow:3px 3px 0 var(--purple)}
+.visit-map{border-color:var(--orange);box-shadow:7px 7px 0 var(--purple)}
+.floating-whatsapp{box-shadow:0 0 0 4px rgba(215,198,165,.2),0 5px 25px #0009}
+@media(max-width:680px){.brand img{width:44px;height:44px;transform:none}}
