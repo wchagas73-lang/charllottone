@@ -493,3 +493,225 @@ body{background:var(--ink);color:var(--paper)}
   .hero-image-caption{left:-8px;bottom:16px;padding:12px 14px}
   .hero-image-caption strong{font-size:23px}
 }
+
+
+/* DIRECAO VISUAL A: GRAFFITI WALL / SKATE CULTURE */
+:root{
+  --wall-black:#0b0a0d;
+  --wall-charcoal:#17141b;
+  --spray-purple:#8650c8;
+  --spray-cyan:#28bfd2;
+  --spray-orange:#f07832;
+  --spray-cream:#e6dccb;
+}
+html{background:var(--wall-black)}
+body{
+  background-color:var(--wall-black);
+  background-image:
+    radial-gradient(ellipse at 18% 12%,rgba(134,80,200,.10),transparent 34%),
+    radial-gradient(ellipse at 84% 48%,rgba(40,191,210,.07),transparent 31%),
+    repeating-linear-gradient(117deg,rgba(255,255,255,.012) 0 1px,transparent 1px 7px);
+}
+body:before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:20;
+  pointer-events:none;
+  opacity:.11;
+  background-image:
+    repeating-linear-gradient(0deg,transparent 0 5px,rgba(255,255,255,.12) 5px 6px,transparent 6px 13px),
+    repeating-linear-gradient(91deg,transparent 0 19px,rgba(0,0,0,.32) 19px 21px,transparent 21px 43px);
+  mix-blend-mode:soft-light;
+}
+.topline{
+  background:var(--spray-orange);
+  color:#100d13;
+  font-family:'Barlow Condensed',Impact,sans-serif;
+  font-weight:900;
+  letter-spacing:2.2px;
+  text-shadow:1px 1px 0 rgba(255,255,255,.25);
+}
+.header{
+  background:rgba(9,8,12,.97);
+  border-bottom:2px solid var(--spray-purple);
+  box-shadow:0 5px 0 rgba(40,191,210,.12);
+}
+.brand-name{
+  font-family:'Rubik Wet Paint','Permanent Marker',cursive!important;
+  color:var(--spray-cream);
+  text-shadow:3px 2px 0 var(--spray-purple),-2px -1px 0 var(--spray-cyan),4px 5px 0 rgba(0,0,0,.8);
+  transform:rotate(-2deg);
+}
+.nav a{font-family:'Barlow Condensed',Impact,sans-serif;font-weight:800;letter-spacing:1px;text-transform:uppercase}
+.nav-cta{
+  background:var(--spray-orange);
+  color:#100d13;
+  border:2px solid #09080b;
+  box-shadow:4px 4px 0 var(--spray-cyan);
+  transform:rotate(-1deg);
+}
+.hero{
+  isolation:isolate;
+  background:
+    radial-gradient(ellipse at 8% 22%,rgba(134,80,200,.25),transparent 31%),
+    radial-gradient(ellipse at 91% 74%,rgba(40,191,210,.18),transparent 28%),
+    repeating-linear-gradient(173deg,rgba(255,255,255,.018) 0 2px,transparent 2px 11px),
+    linear-gradient(135deg,#0b0a0d 0%,#1c1721 54%,#0a090c 100%);
+}
+.hero:before{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  inset:0;
+  width:auto;
+  height:auto;
+  left:0;
+  top:0;
+  border-radius:0;
+  opacity:.36;
+  pointer-events:none;
+  background:
+    radial-gradient(ellipse at 13% 28%,transparent 0 35px,rgba(240,120,50,.8) 36px 39px,transparent 40px),
+    radial-gradient(ellipse at 87% 17%,transparent 0 50px,rgba(40,191,210,.7) 51px 54px,transparent 55px),
+    repeating-linear-gradient(132deg,transparent 0 94px,rgba(134,80,200,.16) 95px 98px,transparent 99px 170px);
+}
+.hero:after{
+  content:"STREET IS NOT A STYLE. IT'S AN ATTITUDE.";
+  position:absolute;
+  z-index:0;
+  right:2.5%;
+  top:14%;
+  max-width:210px;
+  color:rgba(240,120,50,.75);
+  font-family:'Permanent Marker',cursive;
+  font-size:clamp(12px,1.5vw,18px);
+  line-height:1.2;
+  text-align:center;
+  transform:rotate(8deg);
+  text-shadow:2px 2px 0 rgba(134,80,200,.8);
+  pointer-events:none;
+}
+.hero h1{
+  font-family:'Barlow Condensed',Impact,sans-serif;
+  font-weight:900;
+  letter-spacing:-1.5px;
+  text-shadow:3px 3px 0 rgba(134,80,200,.7),-1px -1px 0 rgba(40,191,210,.3);
+}
+.hero h1 span{
+  color:var(--spray-orange);
+  text-shadow:4px 3px 0 var(--spray-purple),-2px -1px 0 var(--spray-cyan);
+}
+.hero-image:after{
+  border:3px solid var(--spray-orange);
+  box-shadow:9px 9px 0 var(--spray-purple),-5px -5px 0 var(--spray-cyan);
+}
+.hero-image-caption{
+  background:linear-gradient(110deg,rgba(10,9,13,.97),rgba(34,24,43,.95));
+  border-left:5px solid var(--spray-orange);
+  box-shadow:6px 6px 0 var(--spray-purple),-2px -2px 0 var(--spray-cyan),0 10px 24px #0009;
+  transform:rotate(-2deg);
+}
+.hero-image-caption span{color:var(--spray-cyan)}
+.ticker{
+  background:var(--spray-orange);
+  color:#100d13;
+  border:0;
+  font-family:'Rubik Wet Paint','Permanent Marker',cursive;
+  letter-spacing:1px;
+  transform:rotate(-.5deg) scale(1.01);
+  box-shadow:0 5px 0 var(--spray-purple),0 -4px 0 var(--spray-cyan);
+}
+.ticker-group span{color:#100d13!important;text-shadow:1px 1px 0 rgba(255,255,255,.4)}
+.section h2,.manifesto h2,.visit h2{
+  font-family:'Barlow Condensed',Impact,sans-serif;
+  font-weight:900;
+  letter-spacing:-.8px;
+  text-shadow:2px 2px 0 rgba(134,80,200,.22);
+}
+.eyebrow{
+  color:var(--spray-orange);
+  text-shadow:1px 1px 0 rgba(134,80,200,.65);
+}
+.collection{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(ellipse at 96% 8%,rgba(40,191,210,.13),transparent 28%),
+    radial-gradient(ellipse at 0% 72%,rgba(134,80,200,.16),transparent 30%),
+    #111015;
+}
+.collection:before{
+  content:"PAINT THE CITY";
+  position:absolute;
+  right:-12px;
+  top:28px;
+  color:rgba(240,120,50,.10);
+  font-family:'Rubik Wet Paint',cursive;
+  font-size:clamp(42px,9vw,112px);
+  transform:rotate(-8deg);
+  pointer-events:none;
+}
+.gallery figure{
+  border:2px solid #39313e;
+  background:#17131c;
+  overflow:hidden;
+}
+.gallery figure:nth-child(3n+1){transform:rotate(-.7deg)}
+.gallery figure:nth-child(3n+2){transform:rotate(.55deg)}
+.gallery figure:nth-child(3n){transform:rotate(-.25deg)}
+.gallery figure:hover{transform:translateY(-6px) rotate(0deg) scale(1.01)}
+.gallery figcaption{
+  background:linear-gradient(0deg,rgba(7,6,9,.98),rgba(7,6,9,.78));
+  border-top:2px solid var(--spray-purple);
+}
+.gallery figcaption span{
+  color:var(--spray-cyan);
+  font-family:'Permanent Marker',cursive;
+}
+.gallery figcaption b{
+  color:var(--spray-cream);
+  font-family:'Barlow Condensed',Impact,sans-serif;
+  letter-spacing:.8px;
+}
+.button-outline,.center-action .button{
+  border:2px solid var(--spray-orange);
+  box-shadow:5px 5px 0 var(--spray-purple);
+  font-family:'Barlow Condensed',Impact,sans-serif;
+  font-weight:900;
+  letter-spacing:1px;
+}
+.manifesto{
+  background:
+    radial-gradient(ellipse at 12% 22%,rgba(134,80,200,.3),transparent 30%),
+    radial-gradient(ellipse at 88% 76%,rgba(40,191,210,.18),transparent 28%),
+    repeating-linear-gradient(165deg,rgba(255,255,255,.025) 0 2px,transparent 2px 13px),
+    #17121d;
+  border-top:3px solid var(--spray-orange);
+  border-bottom:3px solid var(--spray-cyan);
+}
+.manifesto h2 span{color:var(--spray-orange);text-shadow:3px 3px 0 var(--spray-purple)}
+.review-card{
+  border:1px solid #51445c;
+  box-shadow:5px 5px 0 rgba(134,80,200,.25);
+}
+.visit{
+  background:
+    radial-gradient(ellipse at 86% 18%,rgba(40,191,210,.13),transparent 30%),
+    #0c0b0f;
+}
+.visit-map{
+  border:3px solid var(--spray-orange);
+  box-shadow:8px 8px 0 var(--spray-purple),-3px -3px 0 var(--spray-cyan);
+}
+.footer{border-top:3px solid var(--spray-orange)}
+.floating-whatsapp{animation:none}
+@media(max-width:680px){
+  .hero:after{right:4%;top:5%;max-width:115px;font-size:10px}
+  .collection:before{top:12px;font-size:46px}
+  .gallery figure:nth-child(n){transform:none}
+  .gallery figure:hover{transform:translateY(-3px)}
+}
+@media(prefers-reduced-motion:reduce){
+  .gallery figure{animation:none}
+}
