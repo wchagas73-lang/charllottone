@@ -348,3 +348,8 @@ body{background:var(--ink);color:var(--paper)}
   .graffiti-splatter{opacity:.9}
   .brand img{transition:none}
 }
+
+
+/* Mantem as animacoes de entrada sem bloquear os efeitos de hover */
+@keyframes street-photo-in{from{opacity:0}to{opacity:1}}
+@keyframes street-review-in{from{opacity:0}to{opacity:1}}
