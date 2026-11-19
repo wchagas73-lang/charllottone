@@ -1424,3 +1424,34 @@ body{
   }
   .nav{top:76px!important}
 }
+
+
+/* CONVERSAO: fotos clicaveis, guia de tamanhos e perguntas frequentes */
+.hero-photo-link{display:block;width:100%;height:100%;position:relative}
+.hero-photo-link>img{display:block;width:100%;height:100%;object-fit:cover}
+.gallery-photo-link{display:block;width:100%;height:100%;overflow:hidden}
+.gallery-photo-link img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.gallery-photo-link:hover img{transform:scale(1.045)}
+.gallery-photo-link:focus-visible,.hero-photo-link:focus-visible{outline:3px solid #19d5e8;outline-offset:4px}
+.size-help{background:#101015;color:#f5f3ef}
+.size-guide{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:26px 28px;margin:0 0 48px;background:linear-gradient(120deg,#21152d,#111820);border:1px solid #8b35e8;box-shadow:5px 5px 0 rgba(25,213,232,.22)}
+.size-guide-copy strong,.faq-list h3{font-family:'Barlow Condensed',Impact,sans-serif;font-size:25px;letter-spacing:.08em;color:#ffd52e}
+.size-guide-copy p{font-family:'Barlow Condensed',Impact,sans-serif;font-size:32px;font-weight:900;letter-spacing:.13em;margin:10px 0;color:#fff}
+.size-guide-copy small{display:block;max-width:520px;color:#c5c2cc;font-size:12px;line-height:1.7}
+.size-guide .button{flex:0 0 auto}
+.faq-list{max-width:900px;margin:0 auto}
+.faq-list h3{font-size:30px;margin:0 0 16px}
+.faq-list details{border-top:1px solid #45404d;padding:0 4px}
+.faq-list details:last-child{border-bottom:1px solid #45404d}
+.faq-list summary{position:relative;cursor:pointer;list-style:none;padding:19px 34px 19px 0;color:#f5f3ef;font-weight:800;font-size:14px}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary:after{content:"+";position:absolute;right:4px;top:13px;color:#19d5e8;font-size:25px;font-weight:500}
+.faq-list details[open] summary:after{content:"−";color:#ff3e9d}
+.faq-list details p{max-width:760px;margin:0;padding:0 28px 20px 0;color:#c4c0ca;font-size:13px;line-height:1.8}
+@media(max-width:680px){
+ .size-guide{display:flex;flex-direction:column;align-items:stretch;padding:21px 18px;margin-bottom:36px}
+ .size-guide .button{width:100%;text-align:center}
+ .size-guide-copy p{font-size:27px}
+ .faq-list summary{font-size:13px;padding:17px 32px 17px 0}
+ .faq-list details p{font-size:12px}
+}
