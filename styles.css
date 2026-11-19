@@ -1115,3 +1115,19 @@ body:before{opacity:.10}
     transform:scale(1.08)!important;
   }
 }
+
+
+/* AJUSTE DE PALETA: remover o verde dos elementos visuais */
+:root{--spray-lime:#ffd52e;--lime:#ffd52e}
+.topline{
+  background:linear-gradient(100deg,#9b35e8 0%,#f02d45 28%,#ffd52e 55%,#19c8f2 100%)!important;
+}
+.nav-cta{background:#ffd52e!important;color:#09090c!important;box-shadow:4px 4px 0 #f02d45!important}
+.eyebrow{color:#ffd52e!important}
+.hero-image:after{box-shadow:8px 8px 0 #9b35e8,-4px -4px 0 #f02d45!important}
+.ticker-group span{color:#ffd52e!important}
+.button-outline,.center-action .button{border-color:#ffd52e!important}
+.button-outline:hover{background:#ffd52e!important;color:#09090c!important}
+.manifesto{border-top-color:#ffd52e!important;border-bottom-color:#19c8f2!important}
+.manifesto-mark{color:#ff3e9d!important;text-shadow:4px 4px 0 #9b35e8!important}
+.visit-copy .eyebrow{color:#ffd52e!important}
