@@ -916,3 +916,154 @@ body:before{opacity:.045}
 @media(prefers-reduced-motion:reduce){
   .hero-image img,.gallery figure img{transition:none!important}
 }
+
+
+/* GRAFFITI WALL 2.0: CORES VIVAS FORA DAS FOTOGRAFIAS */
+:root{
+  --wall-black:#09090c;
+  --wall-charcoal:#19171f;
+  --spray-purple:#9b35e8;
+  --spray-red:#f02d45;
+  --spray-cyan:#19c8f2;
+  --spray-pink:#ff3e9d;
+  --spray-lime:#c7f000;
+  --spray-yellow:#ffd52e;
+  --spray-cream:#f5f3ef;
+}
+html,body{background:#09090c;color:#f5f3ef}
+body{
+  background-image:
+    radial-gradient(ellipse at 8% 10%,rgba(155,53,232,.20),transparent 30%),
+    radial-gradient(ellipse at 92% 28%,rgba(240,45,69,.14),transparent 28%),
+    radial-gradient(ellipse at 80% 88%,rgba(25,200,242,.12),transparent 27%),
+    repeating-linear-gradient(117deg,rgba(255,255,255,.014) 0 1px,transparent 1px 7px);
+}
+body:before{opacity:.10}
+.topline{
+  background:linear-gradient(100deg,#9b35e8 0%,#f02d45 26%,#ffd52e 51%,#c7f000 73%,#19c8f2 100%)!important;
+  color:#09090c!important;border:0!important;text-shadow:none!important;
+}
+.header{
+  background:rgba(9,9,12,.97)!important;
+  border-bottom:2px solid #9b35e8!important;
+  box-shadow:0 4px 0 rgba(25,200,242,.16)!important;
+}
+.nav a:hover,.text-link:hover{color:#ff3e9d!important}
+.nav-cta{
+  background:#c7f000!important;color:#09090c!important;
+  border:2px solid #09090c!important;box-shadow:4px 4px 0 #f02d45!important;
+}
+.hero{
+  background:
+    radial-gradient(ellipse at 4% 20%,rgba(155,53,232,.28),transparent 32%),
+    radial-gradient(ellipse at 93% 72%,rgba(25,200,242,.20),transparent 30%),
+    repeating-linear-gradient(148deg,transparent 0 100px,rgba(240,45,69,.07) 101px 104px,transparent 105px 170px),
+    linear-gradient(135deg,#09090c 0%,#1b1721 52%,#09090c 100%)!important;
+}
+.hero:before{
+  opacity:.48!important;
+  background:
+    radial-gradient(ellipse at 13% 28%,transparent 0 35px,rgba(240,45,69,.9) 36px 39px,transparent 40px),
+    radial-gradient(ellipse at 87% 17%,transparent 0 50px,rgba(25,200,242,.85) 51px 54px,transparent 55px),
+    repeating-linear-gradient(132deg,transparent 0 94px,rgba(155,53,232,.24) 95px 98px,transparent 99px 170px)!important;
+}
+.hero:after{color:rgba(255,255,255,.48)!important;text-shadow:2px 2px 0 rgba(155,53,232,.55)!important}
+.hero h1 span,.section h2 span,.manifesto h2 span,.visit h2 span{
+  color:#ff3e9d!important;text-shadow:3px 3px 0 #9b35e8!important;
+}
+.eyebrow{color:#c7f000!important;text-shadow:1px 1px 0 #09090c!important}
+.hero-image:after{
+  border:2px solid #19c8f2!important;
+  box-shadow:8px 8px 0 #9b35e8,-4px -4px 0 #f02d45!important;
+}
+/* Imagens sempre naturais: sem saturação artificial, sem placas e sem texto chamativo */
+.hero-image img,.gallery figure img{filter:none!important}
+.hero-image-caption{
+  background:rgba(0,0,0,.08)!important;border:0!important;
+  box-shadow:none!important;backdrop-filter:none!important;
+  transform:none!important;padding:4px 6px!important;
+}
+.hero-image-caption span{
+  color:rgba(255,255,255,.9)!important;
+  font:500 7px/1.15 Inter,Arial,sans-serif!important;
+  letter-spacing:.8px!important;
+}
+.hero-image-caption strong{
+  color:#fff!important;font:600 10px/1.15 Inter,Arial,sans-serif!important;
+  letter-spacing:.2px!important;text-shadow:0 1px 4px #000!important;
+}
+.ticker{
+  background:#f02d45!important;color:#09090c!important;
+  border:0!important;box-shadow:0 5px 0 #9b35e8,0 -3px 0 #19c8f2!important;
+  transform:rotate(-.35deg) scale(1.005)!important;
+  font-family:'Rubik Wet Paint','Permanent Marker',cursive!important;
+}
+.ticker-group span{color:#c7f000!important;text-shadow:1px 1px 0 #09090c!important}
+.collection{
+  background:
+    radial-gradient(ellipse at 95% 5%,rgba(155,53,232,.16),transparent 29%),
+    radial-gradient(ellipse at 0% 80%,rgba(240,45,69,.10),transparent 28%),
+    #111015!important;
+}
+.collection:before{
+  color:rgba(25,200,242,.10)!important;
+  text-shadow:3px 3px 0 rgba(155,53,232,.12)!important;
+}
+.gallery figure,.gallery figure:nth-child(n){
+  border:1px solid rgba(255,255,255,.18)!important;
+  box-shadow:none!important;transform:none;
+}
+.gallery figure:hover{transform:translateY(-4px)!important}
+.gallery figcaption{
+  background:linear-gradient(0deg,rgba(0,0,0,.28),rgba(0,0,0,0))!important;
+  border:0!important;padding:17px 9px 7px!important;
+}
+.gallery figcaption span{
+  color:rgba(255,255,255,.86)!important;
+  font:500 7px/1.15 Inter,Arial,sans-serif!important;
+  letter-spacing:.7px!important;
+}
+.gallery figcaption b{
+  color:#fff!important;font:600 10px/1.15 Inter,Arial,sans-serif!important;
+  letter-spacing:.15px!important;text-shadow:0 1px 4px #000!important;
+}
+.button-outline,.center-action .button{
+  border:2px solid #c7f000!important;
+  box-shadow:5px 5px 0 #9b35e8!important;
+}
+.button-outline:hover{background:#c7f000!important;color:#09090c!important}
+.manifesto{
+  background:
+    radial-gradient(ellipse at 12% 22%,rgba(155,53,232,.30),transparent 30%),
+    radial-gradient(ellipse at 88% 76%,rgba(240,45,69,.22),transparent 28%),
+    repeating-linear-gradient(165deg,rgba(255,255,255,.025) 0 2px,transparent 2px 13px),
+    #17121d!important;
+  border-top:3px solid #c7f000!important;
+  border-bottom:3px solid #19c8f2!important;
+}
+.manifesto:after{border-color:rgba(255,62,157,.25)!important}
+.manifesto h2 span{color:#ffd52e!important;text-shadow:3px 3px 0 #f02d45!important}
+.manifesto-mark{color:#c7f000!important;text-shadow:4px 4px 0 #9b35e8!important}
+.review-card{border-color:#51445c!important;box-shadow:4px 4px 0 rgba(155,53,232,.24)!important}
+.visit{
+  background:
+    radial-gradient(ellipse at 86% 18%,rgba(25,200,242,.16),transparent 30%),
+    radial-gradient(ellipse at 5% 90%,rgba(155,53,232,.13),transparent 30%),
+    #0c0b0f!important;
+}
+.visit-copy .eyebrow{color:#ffd52e!important}
+.visit-map{border:2px solid #f02d45!important;box-shadow:7px 7px 0 #9b35e8!important}
+.visit-map>a,.maps-link{color:#19c8f2!important}
+.footer{border-top:3px solid #ff3e9d!important}
+.visit-art{border-color:#19c8f2!important;background:radial-gradient(circle,#29202f,#111 70%)!important}
+.visit-art span{color:#ffd52e!important;text-shadow:3px 3px 0 #9b35e8!important}
+@media(max-width:680px){
+  .hero-image-caption span{font-size:6px!important}
+  .hero-image-caption strong{font-size:9px!important}
+  .gallery figcaption{padding:14px 7px 6px!important}
+  .gallery figcaption span{font-size:6px!important}
+  .gallery figcaption b{font-size:9px!important}
+}
+@media(prefers-reduced-motion:reduce){
+  .gallery figure{animation:none!important}
+}
