@@ -1131,3 +1131,107 @@ body:before{opacity:.10}
 .manifesto{border-top-color:#ffd52e!important;border-bottom-color:#19c8f2!important}
 .manifesto-mark{color:#ff3e9d!important;text-shadow:4px 4px 0 #9b35e8!important}
 .visit-copy .eyebrow{color:#ffd52e!important}
+
+
+/* CHARLLOTTONE | DIRECAO VISUAL GRAFFITI URBANO */
+:root{
+  --wall-black:#101014;
+  --wall-charcoal:#202026;
+  --wall-concrete:#45454d;
+  --wall-white:#e8e5df;
+  --spray-purple:#9b35e8;
+  --spray-red:#f04435;
+}
+html,body{background:#101014!important;color:#e8e5df!important}
+body{
+  background-color:#101014!important;
+  background-image:
+    radial-gradient(ellipse at 12% 14%,rgba(155,53,232,.075),transparent 26%),
+    radial-gradient(ellipse at 88% 78%,rgba(240,68,53,.055),transparent 25%),
+    repeating-linear-gradient(115deg,rgba(255,255,255,.012) 0 1px,transparent 1px 8px)!important;
+}
+.topline{
+  background:#202026!important;color:#e8e5df!important;
+  border-bottom:1px solid #45454d!important;
+  animation:none!important;text-shadow:none!important;
+}
+.header{background:rgba(16,16,20,.98)!important;border-bottom:1px solid #34343b!important;box-shadow:none!important}
+.nav-cta{background:#9b35e8!important;color:#fff!important;border:0!important;box-shadow:3px 3px 0 #f04435!important}
+.nav a:hover,.text-link:hover{color:#b86af0!important}
+.eyebrow{color:#b86af0!important;text-shadow:none!important;font-family:'Permanent Marker',cursive!important}
+.hero{
+  background:
+    radial-gradient(ellipse at 8% 18%,rgba(155,53,232,.12),transparent 30%),
+    radial-gradient(ellipse at 92% 82%,rgba(240,68,53,.075),transparent 26%),
+    linear-gradient(135deg,#101014 0%,#1b1b21 52%,#101014 100%)!important;
+}
+.hero:before{
+  width:270px!important;height:270px!important;left:auto!important;right:-100px!important;top:-95px!important;
+  opacity:.28!important;border-radius:50%!important;
+  background:radial-gradient(circle,rgba(155,53,232,.9) 0 1.5px,transparent 2.5px)!important;
+  background-size:12px 12px!important;
+}
+.hero h1 span,.section h2 span,.manifesto h2 span,.visit h2 span{
+  color:#b86af0!important;text-shadow:2px 2px 0 #f04435!important;
+}
+.hero-image:after{
+  border:2px solid #9b35e8!important;
+  box-shadow:6px 6px 0 #f04435!important;
+}
+.hero-image img,.gallery figure img{filter:none!important}
+.button-light{background:#e8e5df!important;color:#101014!important;box-shadow:4px 4px 0 #9b35e8!important}
+.button-light:hover{background:#b86af0!important}
+.text-link{border-color:#9b35e8!important}
+.ticker{
+  background:#202026!important;color:#e8e5df!important;
+  border-top:1px solid #45454d!important;border-bottom:1px solid #45454d!important;
+  box-shadow:none!important;transform:none!important;
+  font-family:'Barlow Condensed',Impact,sans-serif!important;
+  font-size:clamp(18px,2.3vw,25px)!important;letter-spacing:2px!important;
+}
+.ticker-group span{color:#b86af0!important;text-shadow:1px 1px 0 #101014!important}
+.collection{background:#15151a!important}
+.collection:before{opacity:.08!important}
+.section h2 span{color:#e8e5df!important;text-shadow:2px 2px 0 #9b35e8!important}
+.gallery figure,.gallery figure:nth-child(n){
+  background:#202026!important;border:1px solid #45454d!important;
+  box-shadow:none!important;
+}
+.gallery figure:hover{border-color:#9b35e8!important}
+.gallery figcaption span{color:#d2b1ed!important}
+.gallery figcaption b{color:#fff!important}
+.button-outline,.center-action .button{
+  border:1px solid #9b35e8!important;box-shadow:3px 3px 0 #f04435!important;
+}
+.button-outline:hover{background:#9b35e8!important;color:#fff!important;border-color:#9b35e8!important}
+.manifesto{
+  background:
+    radial-gradient(ellipse at 8% 18%,rgba(155,53,232,.16),transparent 28%),
+    repeating-linear-gradient(165deg,rgba(255,255,255,.018) 0 1px,transparent 1px 12px),
+    #1a191f!important;
+  border-top:1px solid #9b35e8!important;border-bottom:1px solid #45454d!important;
+}
+.manifesto:after{border:18px dotted rgba(240,68,53,.18)!important}
+.manifesto .eyebrow{color:#b86af0!important}
+.manifesto h2 span{color:#e8e5df!important;text-shadow:2px 2px 0 #9b35e8!important}
+.manifesto-mark{color:#e8e5df!important;text-shadow:4px 4px 0 #9b35e8!important}
+.reviews{background:#17171c!important;color:#e8e5df!important}
+.reviews .eyebrow{color:#b86af0!important}
+.reviews h2 span{color:#e8e5df!important;text-shadow:2px 2px 0 #9b35e8!important}
+.review-card{background:#222228!important;color:#e8e5df!important;border:1px solid #45454d!important;box-shadow:3px 3px 0 rgba(155,53,232,.22)!important}
+.review-card p{color:#f5f3ef!important}
+.review-card small,.rating-summary small{color:#aaa!important}
+.stars{color:#f04435!important}
+.reviews>.text-link{color:#e8e5df!important}
+.visit{background:#101014!important}
+.visit-copy .eyebrow{color:#b86af0!important}
+.visit-map{border:1px solid #9b35e8!important;box-shadow:5px 5px 0 #f04435!important}
+.visit-map>a,.maps-link{color:#d2b1ed!important}
+.visit-art{border:1px solid #45454d!important;background:#202026!important}
+.visit-art span{color:#e8e5df!important;text-shadow:2px 2px 0 #9b35e8!important}
+.footer{border-top:1px solid #45454d!important}
+.floating-whatsapp{background:#202026!important;color:#25d366!important;border:1px solid #45454d!important;box-shadow:0 5px 20px #0009!important}
+@media(max-width:680px){
+  .topline{font-size:8px!important;letter-spacing:1px!important}
+  .manifesto:after{opacity:.5!important}
+}
