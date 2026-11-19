@@ -1378,3 +1378,13 @@ body{
   background:transparent!important;
   object-fit:contain!important;
 }
+
+
+/* Ícones oficiais em suas cores de marca */
+.instagram-color-icon{width:21px;height:21px;flex:0 0 auto;fill:none;stroke:url(#instagram-gradient-manifest);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.instagram-color-icon .instagram-dot{fill:#ff0069;stroke:none}
+.footer-instagram .instagram-color-icon{stroke:url(#instagram-gradient-footer)}
+.manifesto-instagram-link{display:inline-flex;align-items:center;gap:9px}
+.manifesto-instagram-link .instagram-color-icon{width:23px;height:23px}
+.floating-whatsapp{background:#25D366!important;color:#fff!important;border:1px solid #25D366!important;box-shadow:0 5px 20px #0008!important}
+.floating-whatsapp svg{color:#fff!important}
